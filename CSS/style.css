@@ -4,6 +4,39 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (max-width: 767px) {
+  .page-content {
+    margin: 0 20px;
+  }
+  .launch-app {
+    text-align: center;
+  }
+  h1 {
+    font-size: 4em;
+  }
+  h2 {
+    font-size: 3em;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .app-title {
+    text-align: left;
+  }
+  hr {
+    display: none;
+  }
+  .about-paragraphs {
+    margin: 30px 200px;
+  }
+  h1 {
+    font-size: 4em;
+  }
+  h2 {
+    font-size: 3em;
+  }
+}
+
 body {
   margin: 0px auto;
 }
@@ -15,17 +48,9 @@ h3 {
   margin: 0;
 }
 
-h1 {
-  font-size: 75px;
-}
-
-h2 {
-  font-size: 48px;
-}
-
 h3 {
   font-size: 24px;
-  opacity: 0.7;
+  
 }
 
 p {
@@ -35,6 +60,10 @@ p {
   line-height: 1.5;
   text-align: left;
 }
+.bg-custom {
+  background: var(--primary-color);
+}
+
 .have-space {
   margin-top: 45px;
 }
@@ -52,9 +81,6 @@ p {
   padding-left: 0;
 }
 
-.app-title {
-  text-align: left;
-}
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -77,6 +103,7 @@ p {
 
 .about-link {
   color: var(--primary-color);
+  box-shadow: var(--box-shadow);
   border: 1px solid var(--primary-color);
 }
 
@@ -88,12 +115,6 @@ p {
 
 .about-paragraphs {
   display: flex;
-  margin: 30px 0;
-  padding: 0 300px;
-}
-
-.about-paragraphs p {
-  margin: 10px;
 }
 
 .email-link {
@@ -108,6 +129,6 @@ p {
   text-decoration: underline;
 }
 
-.container {
-  margin-bottom: 80px;
+.page-content {
+  margin-bottom: 40px;
 }
